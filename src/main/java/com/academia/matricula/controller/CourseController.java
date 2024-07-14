@@ -36,7 +36,6 @@ public class CourseController {
     private final ICourseService service;
     @Qualifier("courseMapper")
     private final ModelMapper modelMapper;
-  //  private final Cloudinary cloudinary;
 
     @GetMapping
     public Mono<ResponseEntity<Flux<CourseDTO>>> findAll() {
