@@ -48,7 +48,7 @@ public class JwtUtil implements Serializable  {
         return Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload();
     }
 
-    //////////////////////////////////////////////////////
+    ///////////////////////
     public String getUsernameFromToken(String token) {
         return getAllClaimsFromToken(token).getSubject();
     }
